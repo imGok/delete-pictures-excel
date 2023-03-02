@@ -1,4 +1,5 @@
 # Pictures filter based on CSV
+This script filters pictures according to an "ID" column
 
 ## Installation
 
@@ -25,4 +26,5 @@
 
 
 ## Config
-- You can change the delimeter of the CSV file in the config.json file
+- Delimiter property corresponds to the delimiter in your .csv
+- RefColumnIndex property corresponds to the index of the "ID" column (starting to 1)
