@@ -1,3 +1,4 @@
 {
-  "delimiter": ";"
+  "delimiter": ";",
+  "refColumnIndex": 2
 }

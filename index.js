@@ -10,7 +10,7 @@ async function main() {
     .pipe(csv.parse({ delimiter: configJson.delimiter }))
     .on("error", (error) => console.error(error))
     .on("data", (row) => {
-      allReferences.push(row[1]);
+      allReferences.push(row[configJson.refColumnIndex - 1]);
     })
     .on("end", (rowCount) => {
       fs.readdir(testFolder, (err, files) => {
